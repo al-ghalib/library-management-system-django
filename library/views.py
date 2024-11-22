@@ -12,7 +12,6 @@ class BookViewSet(ModelViewSet):
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticated, IsAdminUser]
 
-
 class BorrowBookView(APIView):
     permission_classes = [IsAuthenticated]
 

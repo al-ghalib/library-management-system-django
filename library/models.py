@@ -1,5 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from authentication.models import CustomUser as User
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
